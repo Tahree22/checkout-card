@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Karma&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karma", serif;
+}
+
+body {
+  background: url("./images/pattern-background-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.hero-txt {
+  width: 100%;
+  text-align: center;
+  padding: 5% 10%;
+  letter-spacing: 0.2px;
+}
+
+.hero {
+  width: 70%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.hero-img img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+
+.checkout-card {
+  width: 35%;
+  background: white;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  margin-bottom: 5%;
+}
+
+.plan-rate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  margin: auto;
+  padding: 2% 5%;
+  background: #f3f4f7;
+  margin-bottom: 5%;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.rate-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.change-link {
+  color: #864ebb;
+  text-decoration: none;
+}
+
+.change-link:active {
+  color: #2312dd;
+  text-decoration: underline;
+}
+
+.grey-txt {
+  color: #80857c;
+}
+
+.btn {
+  display: block;
+  width: 85%;
+  margin: auto;
+  outline: none;
+  border: none;
+  padding: 2%;
+  border-radius: 12px;
+  background: #864ebb;
+  cursor: pointer;
+  color: white;
+  box-shadow: #6a359d 0px 20px 25px -35px, #6a359d 0px 10px 10px -5px;
+}
+
+.btn:hover {
+  background: #2312dd;
+  box-shadow: #2312dd 0px 20px 25px -35px, #2312dd 0px 10px 10px -5px;
+}
+
+.btn:active {
+  background-color: #2312dd;
+  box-shadow: #2312dd 0px 20px 25px -35px, #2312dd 0px 10px 10px -5px;
+}
+
+.cancel-ord {
+  text-align: center;
+  padding: 8% 0;
+}
+
+/* Media query */
+
+@media (min-width: 0) and (max-width: 600px){
+
+    body{
+        background: url('./images/pattern-background-mobile.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+    .checkout-card{
+        width: 90%;
+    }
+
+    .btn{
+        padding: 4%;
+        font-size: 16px;
+        font-weight: bolder;
+        letter-spacing: 1px;
+    }
+
+    .plan-rate{
+        margin-bottom: 7%;
+    }
+
+    .rate-info{
+        width: 55%;
+    }
+
+}
