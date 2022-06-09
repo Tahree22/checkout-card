@@ -101,7 +101,15 @@ body {
   box-shadow: #2312dd 0px 20px 25px -35px, #2312dd 0px 10px 10px -5px;
 }
 
-.cancel-ord {
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color:#2312dd;
+}
+
+.cancel-ord{
   text-align: center;
   padding: 8% 0;
 }
